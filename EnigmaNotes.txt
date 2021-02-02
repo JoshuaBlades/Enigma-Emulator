@@ -1,0 +1,28 @@
+How the rotors work:
+
+3 rotors
+--------
+
+	-	For every letter, the first rotor makes one tick
+	-	For every 26th tick of the first rotor, the second makes one tick
+	-	For every 26th tick of the second rotor, the third one will make one tick
+
+Reflector
+---------
+	-	Reflector changes the letter after its been through the rotors
+	-	Goes back through the 3 rotors
+	-	A single letter can never be connected to itself (the fatal flaw)
+	-	Automatically set X to Y in setup making sure X != X
+
+Once Rotors set
+---------------
+	-	Input goes to matched output on R1
+	-	R1 gets inputted to R2 relative to regular alphabet 
+	-	R2 gets inputted to R3 relative to regular alphabet and you get the output
+
+Decrypt
+-------
+	-	Reset rotors back to original state
+
+Known Issues
+------------
